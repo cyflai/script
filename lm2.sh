@@ -1,6 +1,6 @@
 #!/bin/bash -uxe
 
-## bash <(curl -s https://gitlab.hds-cloudconnect.com/chris.lai/lumada2/raw/master/install.sh)
+## bash <(curl -s https://raw.githubusercontent.com/cyflai/script/master/lm2.sh)
 
 yum remove -y docker docker-common docker-selinux docker-engine
 yum install -y yum-utils device-mapper-persistent-data lvm2 wget ntp
