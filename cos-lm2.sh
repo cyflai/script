@@ -2,12 +2,12 @@
 
 ## bash <(curl -s https://raw.githubusercontent.com/cyflai/script/master/cos-lm2.sh)
 
-sed -i 's/^SELINUX=.*/SELINUX=disabled/g' /etc/selinux/config
+sudo sed -i 's/^SELINUX=.*/SELINUX=disabled/g' /etc/selinux/config
 sudo sysctl -w vm.max_map_count=262144
 sudo echo "vm.max_map_count=262144" >> /etc/sysctl.conf
 
-mkdir -p /opt/lumada
-cd /opt/lumada
+sudo mkdir -p /opt/lumada
+sudo cd /opt/lumada
 
 #full product
 wget https://gitlab.hds-cloudconnect.com:8443/sku-2.0.0.98.tar.gz --no-check-certificate
