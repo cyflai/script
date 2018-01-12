@@ -6,7 +6,7 @@ sudo sed -i 's/^SELINUX=.*/SELINUX=disabled/g' /etc/selinux/config
 sudo sysctl -w vm.max_map_count=262144
 sudo echo "vm.max_map_count=262144" >> /etc/sysctl.conf
 
-sudo mkdir -p /opt/lumada
+sudo mkdir -p /opt/lumanda
 sudo cd /opt/lumada
 
 #full product
