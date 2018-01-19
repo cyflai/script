@@ -30,3 +30,14 @@ tar xvf sku-2.0.0.98.tar.gz
 #wget https://gitlab.hds-cloudconnect.com:8443/Lumada-2.0.0.213.tar.gz --no-check-certificate
 #tar xvf Lumada-2.0.0.213.tar.gz 
 #2.0.0.213/bin/install
+
+#post installation
+# cp /opt/Lumada/bin/Lumada.service /etc/systemd/system
+# sudo systemctl enable Lumada.service
+# sudo systemctl start Lumada.service
+
+
+#remove setup
+#systemctl stop lumada
+#docker rm $(docker ps -a -q)
+#rm -rf 2.0.0.98 bin cli config data doc log plugins retired temp
