@@ -26,6 +26,9 @@ wget https://gitlab.hds-cloudconnect.com:8443/sku-2.0.0.98.tar.gz --no-check-cer
 tar xvf sku-2.0.0.98.tar.gz
 2.0.0.98/bin/install
 
+#installing the Lumada for single instance
+/opt/lumada/bin/setup -i 127.0.0.1
+
 #post installation
 cp /opt/Lumada/bin/sku.service /etc/systemd/system/lumada.service
 sed -i 's/hci/lumada/g' /etc/systemd/system/lumada.service
