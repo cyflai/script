@@ -28,9 +28,9 @@ tar xvf sku-2.0.0.98.tar.gz
 
 #post installation
 cp /opt/Lumada/bin/sku.service /etc/systemd/system/.
-#sudo systemctl enable sku.service
-#sudo systemctl start sku.service
-
+sed -i 's/hci/lumada/g' /etc/systemd/system/sku.service
+sudo systemctl enable sku.service
+sudo systemctl start sku.service
 
 #remove setup
 #systemctl stop lumada
