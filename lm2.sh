@@ -26,15 +26,10 @@ wget https://gitlab.hds-cloudconnect.com:8443/sku-2.0.0.98.tar.gz --no-check-cer
 tar xvf sku-2.0.0.98.tar.gz
 2.0.0.98/bin/install
 
-#core installation
-#wget https://gitlab.hds-cloudconnect.com:8443/Lumada-2.0.0.213.tar.gz --no-check-certificate
-#tar xvf Lumada-2.0.0.213.tar.gz 
-#2.0.0.213/bin/install
-
 #post installation
-# cp /opt/Lumada/bin/Lumada.service /etc/systemd/system
-# sudo systemctl enable Lumada.service
-# sudo systemctl start Lumada.service
+cp /opt/Lumada/bin/sku.service /etc/systemd/system/.
+#sudo systemctl enable sku.service
+#sudo systemctl start sku.service
 
 
 #remove setup
