@@ -27,7 +27,7 @@ tar xvf sku-2.0.0.98.tar.gz
 2.0.0.98/bin/install
 
 echo "installing the Lumada for single instance"
-/opt/lumada/bin/setup -i 127.0.0.1
+/opt/lumada/bin/setup -i
 echo "done"
 
 #post installation
