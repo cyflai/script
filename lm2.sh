@@ -41,3 +41,19 @@ echo "service started"
 #systemctl stop lumada
 #docker rm $(docker ps -a -q)
 #rm -rf 2.0.0.98 bin cli config data doc log plugins retired temp
+
+
+#fdisk /dev/sdb
+#n
+#p
+#1
+#w
+#pvcreate /dev/sdb1
+#vgextend centos /dev/sdb1
+#lvextend /dev/centos/root /dev/sdb1
+#xfs_growfs /dev/centos/root
+
+
+
+
+
