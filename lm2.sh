@@ -2,6 +2,8 @@
 
 ## bash <(curl -s https://raw.githubusercontent.com/cyflai/script/master/lm2.sh)
 
+MYIP=`ip -4 route get 8.8.8.8 | awk {'print $7'} | tr -d '\n'`
+
 yum remove -y docker docker-common docker-selinux docker-engine
 yum install -y yum-utils device-mapper-persistent-data lvm2 wget ntp
 sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
@@ -27,7 +29,7 @@ tar xvf sku-2.0.0.98.tar.gz
 2.0.0.98/bin/install
 
 echo "installing the Lumada for single instance"
-/opt/lumada/bin/setup -i
+/opt/lumada/bin/setup -i $MYIP
 echo "done"
 
 #post installation
